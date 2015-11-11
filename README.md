@@ -7,10 +7,19 @@ create generic / all purpose gulp setup for your frontend application.
 ## Goals of this repository
 - [ ] Simple gulp file
 - [ ] Each task is individual file
-- [ ] SASS / SCSS support
-- [ ] JSHint
 - [ ] Typescript support
+- [ ] Simple configuration
+ - [ ] Variables for development and production environments
+ - [ ] Path(s) configuration for application
+ - [ ] TSD config
+- [ ] SASS / SCSS support
+- [ ] Linters
+ - [ ] JSHint
+ - [ ] TSLint
+ - [ ] CSS lint (although these are generated via SCSS task) 
+ - [ ] SCSS lint
 - [ ] Development environment
+ - [ ] Simple server setup to serve application
  - [ ] "Live" linters
  - [ ] Live reload after each alter
 - [ ] Production environment
