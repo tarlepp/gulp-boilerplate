@@ -25,6 +25,7 @@ create generic / all purpose gulp setup for your frontend application.
 - [ ] Production environment
  - [ ] JS Minifying
  - [ ] CSS Minifying
+ - [ ] Create "static" file set that can be served via any web server
 
 ## Requirements
 Todo
