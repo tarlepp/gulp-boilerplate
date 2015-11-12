@@ -6,6 +6,9 @@ create generic / all purpose gulp setup for your frontend application.
 
 ## Goals of this repository
 - [ ] Simple gulp file
+ - [ ] gulp serve {environment}, to start specified environment
+ - [ ] gulp dist, to create dist version of application
+ - [ ] gulp test, to run all tests
 - [ ] Each task is individual file
 - [ ] Typescript support
 - [ ] Simple configuration
@@ -18,6 +21,10 @@ create generic / all purpose gulp setup for your frontend application.
  - [ ] TSLint
  - [ ] CSS lint (although these are generated via SCSS task) 
  - [ ] SCSS lint
+- [ ] Test suite
+ - [ ] Multiple browsers
+ - [ ] Multiple OS 
+ - [ ] Re-run tests after each modification?
 - [ ] Development environment
  - [ ] Simple server setup to serve application
  - [ ] "Live" linters
