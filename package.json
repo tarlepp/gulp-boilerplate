@@ -1,0 +1,25 @@
+{
+  "name": "gulp-boilerplate",
+  "version": "0.0.0",
+  "description": "Generic gulp boilerplate for frontend application",
+  "scripts": {
+    "start": "gulp serve --env dev",
+    "dist": "gulp build --env dist",
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarlepp/gulp-boilerplate.git"
+  },
+  "keywords": [
+    "gulp",
+    "boilerplate",
+    "typescript"
+  ],
+  "author": "Tarmo Leppanen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tarlepp/gulp-boilerplate/issues"
+  },
+  "homepage": "https://github.com/tarlepp/gulp-boilerplate#readme"
+}
