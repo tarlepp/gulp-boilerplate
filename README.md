@@ -9,6 +9,7 @@ create generic / all purpose gulp setup for your frontend application.
  - [ ] gulp serve {environment}, to start specified environment
  - [ ] gulp dist, to create dist version of application
  - [ ] gulp test, to run all tests
+- [ ] Bower support
 - [ ] Each task is individual file
 - [ ] Typescript support
 - [ ] Simple configuration
