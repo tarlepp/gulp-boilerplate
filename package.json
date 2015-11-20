@@ -24,10 +24,14 @@
   },
   "homepage": "https://github.com/tarlepp/gulp-boilerplate#readme",
   "devDependencies": {
+    "connect-livereload": "0.5.3",
+    "express": "4.13.3",
     "gulp": "3.9.0",
+    "tiny-lr": "0.2.1",
     "ts-node": "0.5.1",
     "tsd": "0.6.5",
     "typescript": "1.6.2",
-    "typescript-register": "1.1.0"
+    "typescript-register": "1.1.0",
+    "yargs": "3.30.0"
   }
 }
