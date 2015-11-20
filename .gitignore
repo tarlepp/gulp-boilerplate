@@ -80,3 +80,6 @@ crashlytics.properties
 crashlytics-build.properties
 
 # Created by .ignore support plugin (hsz.mobi)
+
+# Project specified stuff
+tools/typings/tsd

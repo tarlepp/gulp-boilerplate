@@ -5,7 +5,8 @@
   "scripts": {
     "start": "gulp serve --env dev",
     "dist": "gulp build --env dist",
-    "test": "gulp test"
+    "test": "gulp test",
+    "postinstall": "tsd purge && tsd reinstall --clean --overwrite && tsd link && tsd rebundle"
   },
   "repository": {
     "type": "git",
