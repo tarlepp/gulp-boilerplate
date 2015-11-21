@@ -23,10 +23,23 @@ export function loadTasks(): void {
  * @returns {any}
  */
 export function task(taskName: string, option?: string | Object) {
+
+
   return require(join('..', 'tasks', taskName))(gulp, plugins(), option);
 }
 
 // Private
+
+/**
+ * Helper function to determine if given string ends with specified pattern.
+ *
+ * @param   {string}  string
+ * @param   {string}  suffix
+ * @returns {boolean}
+ */
+function endsWith(string, suffix) {
+  return string.indexOf(suffix, string.length - suffix.length) !== -1;
+}
 
 /**
  * Helper function to register specified task.
@@ -41,8 +54,6 @@ function registerTask(taskName: string, filename?: string, option: string = ''):
 
 /**
  * Helper function to scan specified directory for gulp task files for this project.
- *
- * TODO: add recursive lookup ? or enforce pattern file + folder (ie ./tools/utils & ./tools/utils.ts )
  *
  * @param {string}    root  Path root where to start
  * @param {function}  cb    Callback function
@@ -64,7 +75,7 @@ function scanDir(root: string, cb: (taskName: string) => void) {
         walk(currentPath);
       }
 
-      if (lstatSync(currentPath).isFile() && file.endsWith('.ts')) {
+      if (lstatSync(currentPath).isFile() && endsWith(file, '.ts')) {
         let taskName = file.replace(/(\.ts)/, '');
 
         cb(taskName);

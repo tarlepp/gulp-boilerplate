@@ -6,7 +6,7 @@
     "start": "gulp serve --env dev",
     "dist": "gulp build --env dist",
     "test": "gulp test",
-    "postinstall": "tsd purge && tsd reinstall --clean --overwrite && tsd link && tsd rebundle"
+    "postinstall": "tsd purge && tsd reinstall --clean --overwrite && tsd link && tsd rebundle && gulp postinstall"
   },
   "repository": {
     "type": "git",
@@ -25,8 +25,13 @@
   "homepage": "https://github.com/tarlepp/gulp-boilerplate#readme",
   "devDependencies": {
     "connect-livereload": "0.5.3",
+    "del": "2.1.0",
     "express": "4.13.3",
     "gulp": "3.9.0",
+    "gulp-load-plugins": "1.1.0",
+    "gulp-shell": "0.5.1",
+    "gulp-watch": "4.3.5",
+    "run-sequence": "1.1.5",
     "tiny-lr": "0.2.1",
     "ts-node": "0.5.1",
     "tsd": "0.6.5",
