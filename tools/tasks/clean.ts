@@ -7,7 +7,7 @@ export = function clean(gulp, plugins, option) {
   return function(done) {
     let task;
 
-    switch(option) {
+    switch (option) {
       case 'all':
         task = cleanAll();
         break;
