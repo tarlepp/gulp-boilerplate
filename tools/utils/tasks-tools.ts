@@ -23,8 +23,6 @@ export function loadTasks(): void {
  * @returns {any}
  */
 export function task(taskName: string, option?: string | Object) {
-
-
   return require(join('..', 'tasks', taskName))(gulp, plugins(), option);
 }
 
