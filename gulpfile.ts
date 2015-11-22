@@ -33,6 +33,28 @@ gulp.task('postinstall', done =>
   )
 );
 
+// Build dev.
+gulp.task('build.dev', done =>
+  runSequence(
+    'clean.dist',
+    'tslint',
+    'build.sass.dev',
+    'build.assets',
+    'build.images.dev',
+    'build.js.dev',
+    'build.index.dev',
+    done
+  )
+);
+
+gulp.task('build.dev.watch', done =>
+  runSequence(
+    'build.dev',
+    'watch.dev',
+    done
+  )
+);
+
 // Serve each environment
 gulp.task('serve', done =>
   runSequence(
