@@ -19,6 +19,11 @@ export const ASSETS_DEST      = `${APP_DEST}/assets`;
 export const CSS_DEST         = `${APP_DEST}/css`;
 export const VERSION          = appVersion();
 
+export const SYSTEM_CONFIG = {
+  defaultJSExtensions: true,
+  paths: { }
+};
+
 // Configuration for minimum versions of npm and node
 export const VERSION_NPM      = '3.0.0';
 export const VERSION_NODE     = '4.0.0';
