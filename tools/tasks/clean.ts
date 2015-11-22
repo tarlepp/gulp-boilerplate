@@ -4,7 +4,7 @@ import {APP_DEST, TEST_DEST} from '../config';
 
 // Actual task implementation
 export = function clean(gulp, plugins, option) {
-  return function (done) {
+  return function(done) {
     let task;
 
     switch(option) {

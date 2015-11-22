@@ -4,7 +4,7 @@ import {APP_SRC, TOOLS_DIR} from '../config';
 
 // Actual task implementation
 export = function tslint(gulp, plugins) {
-  return function () {
+  return function() {
     let src = [
       join(APP_SRC, '**/*.ts'),
       join(TOOLS_DIR, '**/*.ts'),
