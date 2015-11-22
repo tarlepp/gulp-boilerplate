@@ -30,6 +30,8 @@
     "gulp": "3.9.0",
     "gulp-load-plugins": "1.1.0",
     "gulp-shell": "0.5.1",
+    "gulp-tslint": "3.6.0",
+    "gulp-tslint-stylish": "1.1.1",
     "gulp-watch": "4.3.5",
     "run-sequence": "1.1.5",
     "tiny-lr": "0.2.1",
