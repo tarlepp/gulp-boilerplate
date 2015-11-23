@@ -17,6 +17,7 @@ export const TEST_DEST        = 'test';
 export const APP_DEST         = `dist/${ENV}`;
 export const ASSETS_DEST      = `${APP_DEST}/assets`;
 export const CSS_DEST         = `${APP_DEST}/css`;
+export const LIB_DEST         = `${APP_DEST}/lib`;
 export const VERSION          = appVersion();
 
 export const SYSTEM_CONFIG = {
@@ -27,6 +28,15 @@ export const SYSTEM_CONFIG = {
 // Configuration for minimum versions of npm and node
 export const VERSION_NPM      = '3.0.0';
 export const VERSION_NODE     = '4.0.0';
+
+// Dev dependencies
+export const DEV_DEPENDENCIES = [
+  { dest: LIB_DEST, src: 'systemjs/dist/system-polyfills.js' },
+
+  { dest: LIB_DEST, inject: 'shims', src: 'es6-shim/es6-shim.min.js' },
+  { dest: LIB_DEST, inject: 'shims', src: 'reflect-metadata/Reflect.js' },
+  { dest: LIB_DEST, inject: 'shims', src: 'systemjs/dist/system.src.js' }
+];
 
 // Private
 

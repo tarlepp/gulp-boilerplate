@@ -40,7 +40,6 @@ gulp.task('build.dev', done =>
     'tslint',
     'build.sass.dev',
     'build.assets',
-    'build.images.dev',
     'build.js.dev',
     'build.index.dev',
     done
