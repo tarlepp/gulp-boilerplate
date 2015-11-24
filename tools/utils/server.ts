@@ -28,7 +28,7 @@ export function serveSPA() {
 
   server.use(
     APP_BASE,
-    connectLivereload({ port: LIVE_RELOAD_PORT, foo: 'bar' }),
+    connectLivereload({ port: LIVE_RELOAD_PORT }),
     serveStatic(resolve(process.cwd(), APP_DEST))
   );
 
