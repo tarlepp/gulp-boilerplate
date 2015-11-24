@@ -74,7 +74,7 @@ function scanDir(root: string, cb: (taskName: string) => void) {
       }
 
       if (lstatSync(currentPath).isFile() && endsWith(file, '.ts')) {
-        let taskName = file.replace(/(\.ts)/, '');
+        let taskName = file.slice(0, -3);
 
         cb(taskName);
       }
