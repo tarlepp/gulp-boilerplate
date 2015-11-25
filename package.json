@@ -28,6 +28,7 @@
     "del": "2.1.0",
     "express": "4.13.3",
     "gulp": "3.9.0",
+    "gulp-inject": "3.0.0",
     "gulp-load-plugins": "1.1.0",
     "gulp-plumber": "1.0.1",
     "gulp-sass": "2.1.0",
@@ -38,6 +39,7 @@
     "gulp-tslint-stylish": "1.1.1",
     "gulp-typescript": "2.9.2",
     "gulp-watch": "4.3.5",
+    "reflect-metadata": "0.1.2",
     "run-sequence": "1.1.5",
     "slash": "1.0.0",
     "tiny-lr": "0.2.1",
@@ -46,5 +48,10 @@
     "typescript": "1.6.2",
     "typescript-register": "1.1.0",
     "yargs": "3.30.0"
+  },
+  "dependencies": {
+    "es6-module-loader": "0.17.8",
+    "es6-shim": "0.33.13",
+    "systemjs": "0.19.6"
   }
 }
