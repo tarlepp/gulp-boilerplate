@@ -1,4 +1,6 @@
 (function() {
+  'use strict';
+
   console.log('this is a plain old JavaScript example file, see source /app/js/test.js');
 
   var list = [1, 2, 3];
