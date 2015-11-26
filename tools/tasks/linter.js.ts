@@ -3,7 +3,7 @@ import {join} from 'path';
 import {APP_SRC, TOOLS_DIR} from '../config';
 
 // Actual task implementation
-export = function jshint(gulp, plugins) {
+export = function linterJs(gulp, plugins) {
   return function() {
     let src = [
       join(APP_SRC, '**/*.js'),

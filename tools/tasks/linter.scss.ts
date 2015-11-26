@@ -3,7 +3,7 @@ import {join} from 'path';
 import {APP_SRC} from '../config';
 
 // Actual task implementation
-export = function scsslint(gulp, plugins) {
+export = function linterScss(gulp, plugins) {
   return function() {
     let src = [
       join(APP_SRC, '**', '*.scss')
