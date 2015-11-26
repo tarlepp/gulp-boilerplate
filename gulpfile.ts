@@ -38,6 +38,7 @@ gulp.task('build.dev', done =>
     'clean.dist',
     'tslint',
     'jshint',
+    'scsslint',
     'build.deps',
     'build.sass.dev',
     'build.assets',
