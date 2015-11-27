@@ -26,6 +26,7 @@ gulp.task('clean.test', task('clean', 'test'));
 // Post install.
 gulp.task('postinstall', done =>
   runSequence(
+    'check.environment',
     'clean',
     'npm',
     done

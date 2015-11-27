@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/tarlepp/gulp-boilerplate#readme",
   "devDependencies": {
+    "child-process-promise": "1.1.0",
     "connect-livereload": "0.5.3",
     "del": "2.1.0",
     "express": "4.13.3",
@@ -46,6 +47,7 @@
     "jshint-stylish": "2.1.0",
     "reflect-metadata": "0.1.2",
     "run-sequence": "1.1.5",
+    "semver": "5.1.0",
     "slash": "1.0.0",
     "tiny-lr": "0.2.1",
     "ts-node": "0.5.1",
